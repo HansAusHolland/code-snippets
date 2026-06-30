@@ -7,6 +7,7 @@
 </head>
 <body>
   <div class="dashboard">
+    <img id=weatherIcon src="" alt="waethericon"/>
     <h1><span id="station"></span> <span id="datum"></span></h1>
     <select id="stationSelect"></select>
     
@@ -40,6 +41,7 @@
 
   <script>
     function updateDashboard(station) {
+      document.getElementById("weatherIcon").src = station.fullIconUrl;
       const date = new Date(station.timestamp);
       document.getElementById("datum").textContent = date.toLocaleDateString("nl-NL", {day:"numeric", month:"long", year:"numeric"})
       document.getElementById("tijd").textContent = date.toLocaleTimeString();
