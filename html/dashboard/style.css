@@ -12,6 +12,11 @@ body {
   font-family: sans-serif;
 }
 
+img {
+  margin-bottom: -20px;
+  opacity: 0.4;
+}
+
 .dashboard {
   text-align: center;
 }
@@ -33,6 +38,10 @@ body {
 #station {
   margin-bottom: 24px;
   color: #333;
+}
+
+#weatherIcon {
+  width: 90px;
 }
 
 .card-row {
